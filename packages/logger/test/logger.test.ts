@@ -76,6 +76,10 @@ describe('@firebase/logger', () => {
     testLog(message, 'info', true);
     testLog(message, 'warn', true);
     testLog(message, 'error', true);
+
+    it('yifan --- This test is supposed to fail!', () => {
+      expect(true).to.equal(false);
+    });
   });
 
   describe('Defaults to LogLevel.NOTICE', () => {

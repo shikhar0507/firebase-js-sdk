@@ -255,6 +255,10 @@ describe('.orderBy tests', function() {
     });
   });
 
+  it('yifan --- This test is supposed to fail as well!', () => {
+    expect(false).to.equal(true);
+  });
+
   it('Updates for unindexed queries work', function(done) {
     const refs = getRandomNode(2) as Reference[];
     const reader = refs[0];
